@@ -1,10 +1,1 @@
 .span4.offset8{style: "text-align: right;"}
-  <a href="/" style="color:black"><img src="/img/logo_small.png" style="height:2em;" />dbinbox</a>
-  | 
-  - if session[:registered]
-    = session[:username]
-    %a{href: url("/admin")} settings
-    |
-    %a{href: url("/logout")} sign out
-  - else
-    %a{href: url("/login")} sign in
